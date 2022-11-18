@@ -6,7 +6,7 @@ async function numfacts() {
         var num = Math.floor(Math.random() * 100)
         let url = `http://numbersapi.com/${num}`
         fetch(url, {
-              referrerPolicy: "unsafe_url" 
+              referrerPolicy: "http://numbersapi.com/${num}" 
             })
             .then((response) => {
                 if (!response.ok) {
