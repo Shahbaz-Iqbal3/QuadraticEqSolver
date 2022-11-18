@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.main-container {
+    margin: auto 20px;
+    padding: 50px;
+}
+
+.mian-h {
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    color: rgba(52, 97, 165);
+    text-align: center;
+}
+
+.mian-h sup {
+    color: rgba(52, 97, 165);
+}
+
+.content-box {
+    margin-top: 30px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+
+.input-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    padding: 30px;
+    border-radius: 23px;
+}
+
+.input-container form .btn {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-container form .btn:hover {
+    background-color: #fd4433;
+}
+
+.input-label {
+    font-size: 38px;
+    display: inline-block;
+}
+
+.inputfeild {
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 23px;
+    outline: none;
+    border: 2px solid black;
+}
+
+.inputfeild:focus {
+    border: 2px solid rgba(52, 97, 165);
+    outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.prime-sol {
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    background-color: #fff9c4;
+    border-radius: 23px;
+    width: 40%;
+    height: 250px;
+    margin: 30px auto;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.prime-sol1 {
+    border-left: 5px solid rgba(0, 0, 0, 0.5);
+    border-right: 5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    height: 100%;
+    padding: 20px;
+    word-wrap: break-word;
+}
+
+.content-Sol {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+}
+
+.cal-step {
+    width: 50%;
+}
+
+.cal-step h2,h2 {
+    font-size: 28px;
+    color: #1d1d1d;
+}
+h3,strong{
+    color: #1d1d1d;
+}
+.cal-step h3 {
+    font-size: 22px;
+    text-align: left;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.cal-step h4 {
+    font-size: 20px;
+    margin-left: 20px;
+    display: inline-table;
+}
+
+.quad-formula {
+    margin-left: 120px;
+    margin-top: 40px;
+    width: fit-content;
+    text-align: center;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    letter-spacing: 1.2px;
+
+}
+
+.solution {
+    width: 50%;
+}
+
+.solution>h2 {
+    font-size: 28px;
+    margin-top: 50px;
+}
+
+.solution h3 {
+    font-size: 22px;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.result {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.result .row {
+    display: flex;
+
+}
+
+.result .quad-formula {
+    margin: 20px;
+}
+
+#sqrt-bar {
+    height: 1px;
+    width: fit-content;
+    background: black;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#sqrt-bar::after {
+    content: '';
+    width: 14px;
+    height: 0.5px;
+    position: absolute;
+    top: 7px;
+    left: -9px;
+    transform: rotate(-80deg);
+    background-color: black;
+}
+
+.cal-disc {
+    margin-top: 30px;
+    width: 50%;
+    padding: 20px;
+    border-radius: 23px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+}
+
+.cal-disc p {
+    margin: 10px 0 0 10px;
+    font-size: 16px;
+    color: #000000;
+}
+.primeNum-dis ul{
+    margin-left: 50px;
+    margin-top: 20px;
+    color: #1d1d1d;
+}
+.example {
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    padding: 20px;
+    width: 80%;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 4px;
+    border-left: 4px solid rgba(52, 97, 165);
+    background-color: rgba(0, 133, 242, .1);
+    position: relative;
+    color: #2e2e2e;
+    display: flex;
+    gap: 20px;
+}
+.example .example-img{
+    height: 21px;
+    width: 21px;
+}
+.example .example-img img {
+    height: 16px;
+    width: 16px;
+}
+
+.cal-disc.primeNum-dis {
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* cards CSS  .....................................*/
+
+.home-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.card {
+    max-height: 400px;
+    max-width: 300px;
+    width: 300px;
+    border-radius: 23px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    padding: 20px;
+    padding-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40%;
+    width: 100%;
+    background-color: #FA776B;
+    z-index: -99;
+}
+
+.card .icon-box {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid #FA776B;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.card .icon-box img {
+    height: 100px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-btn {
+    width: 65%;
+    text-align: center;
+    margin-right: 0;
+}
+
+.card-btn:hover {
+    transform: scale(1.1);
+}
+
+.btn-P {
+    padding: 9px 15px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 23px;
+    background-color: #fc594a;
+    border: 0 solid;
+    color: #fff;
+    transition: .5s;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.btn-P a{
+    color: white;
+    text-decoration: none;
+}
+@media(max-width: 890px){
+    .main-container{
+        padding: 10px;
+    }
+    .content-Sol{
+        flex-direction: column-reverse;
+    }
+    .cal-disc,.cal-step{
+        width: 80%;
+        margin:  auto;
+        margin-bottom: 50px;
+      display: block;
+    }
+    .solution{
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+    .quad-formula{
+        margin-left: 50px;
+    }
+    .result{
+        margin: 0;
+    }
+}
+@media(max-width: 650px){
+    .cal-disc{
+        width: 95%;
+    }
+    .prime-sol{
+        width: 80%;
+    }
+}
+@media(max-width: 530px){
+    .mian-h{
+        font-size: 24px;
+    }
+    .input-container form{
+        padding: 20px;
+    }
+    .input-label{
+        font-size: 18px;
+    }
+    .inputfeild{
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding: 4px 9px;
+    }
+    .main-container{
+        padding: 1px;
+        margin: 1px;
+    } 
+    .quad-formula{
+        margin-left: 20px;
+    } 
+    .result{
+        flex-direction: column;
+    }
+    .prime-sol{
+        width: 90%;
+        font-size: 16px;
+    }
+    .cal-disc.primeNum-dis{
+        margin: 10px;
+        width: 95%;
+    }
+    .primeNum-dis .example{
+        margin-left: 0;
+        width: 100%;
+    }
+    .primeNum-dis img{
+        width: 100%;
+    }
+}

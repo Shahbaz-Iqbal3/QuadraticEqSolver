@@ -1,0 +1,145 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main-container{
+    width: 100%;
+    padding: 50px;
+}
+.content{
+    width: 70%;
+}
+.content h1{
+    font-size: 42px;
+}
+.content h2{
+    font-size: 30px;
+}
+.content h3{
+    font-size: 22px;
+}
+.content p{
+    margin: 10px 20px 20px 20px ;
+    font-size: 16px;
+}
+.content ul{
+    margin-bottom: 50px;
+}
+.content ul li{
+    margin: 20px 40px;
+}
+.content img{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+.home-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.card {
+    max-height: 400px;
+    max-width: 300px;
+    width: 300px;
+    border-radius: 23px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    padding: 20px;
+    padding-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40%;
+    width: 100%;
+    background-color: #FA776B;
+    z-index: -99;
+}
+
+.card .icon-box {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid #FA776B;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.card .icon-box img {
+    height: 100px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #202124;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-btn {
+    width: 65%;
+    text-align: center;
+    margin-right: 0;
+}
+
+.card-btn:hover {
+    transform: scale(1.1);
+}
+.btn-P {
+    padding: 9px 15px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 23px;
+    background-color: #fc594a;
+    border: 2px solid #fc594a;
+    color: #fff;
+    transition: .5s;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.btn-P:hover {
+    background-color: #fd6254;
+    color: white;
+    text-shadow: .5px .5px 5px rgba(0, 0, 0, 0.6);
+}
+.btn-P a{
+    color: white;
+    text-decoration: none;
+}
+@media(max-width : 780px){
+        .content{
+            width: 100%;
+        }
+        .main-container{
+            padding: 15px;
+        }
+        .content h1{
+            font-size: 28px;
+        }
+        .content h2{
+            font-size: 22px;
+        }
+        .content h3{
+            font-size: 20px;    
+        }
+}

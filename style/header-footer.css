@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: inherit;
+    height: 60px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+nav .logo {
+    font-size: 34px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(52, 97, 165);
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    color: rgba(17, 36, 82, 0.849);
+    text-transform: capitalize;
+    padding: 7px 14px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    background-color: rgba(52, 97, 165, .2);
+    transform: scale(1.02);
+}
+
+nav ul li .li-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(17, 17, 17);
+}
+
+/* footer.............................................. */
+
+footer {
+    background-color: #272424;
+}
+
+.foot-container {
+    display: flex;
+    padding: 80px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.foot-container .logo {
+    max-width: 200px;
+}
+
+.foot-container .logo h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    color: white;
+    font-weight: 500;
+}
+
+.foot-container .logo p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+.foot-container .links h4 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.foot-container .links ul,
+.foot-container .links1 ul {
+    list-style: none;
+}
+
+.foot-container .links ul li,
+.foot-container .links1 ul li {
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.foot-container .links ul li a,
+.foot-container .links1 ul li a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.foot-container .links1 {
+    width: 120px;
+    text-align: center;
+}
+
+.foot-container .social-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.foot-container .social-links ul li {
+    margin-right: 20px;
+}
+
+.foot-container .social-links ul li i {
+    color: white;
+    font-size: 22px;
+}
+
+.footer-text {
+    background-color: #272424;
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 1099px) {
+    nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+}
+
+@media(max-width: 799px){
+    .foot-container{
+        padding: 40px;
+    }
+   
+    nav ul li a {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    nav ul li .li-icon{
+        width: 22px;
+        height: 22px;
+        display: block;
+        text-align: center;
+    }
+}
+@media(max-width: 650px){
+   nav{
+    flex-direction: column;
+    height: fit-content;
+    padding-bottom: 10px;
+   }
+   .links1{
+    display: none;
+   }
+   .foot-container{
+    padding:  40px 20px;
+    gap: 5px;
+   }
+}
+@media(max-width: 450px){
+     nav ul li {
+       margin-right: 5px;
+       padding: 4px 8px;
+    }
+    .foot-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        gap: 20px;
+    }
+    .foot-container .logo{
+        display: none;
+    }
+    .footer-text{
+        padding: 2px;
+    }
+}
