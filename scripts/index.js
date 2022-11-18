@@ -15,7 +15,7 @@ async function numfacts() {
   body: undefined, // string, FormData, Blob, BufferSource, or URLSearchParams
   referrer: "about:client", // or "" to send no Referer header,
   // or an url from the current origin
-  referrerPolicy: "strict-origin-when-cross-origin", // no-referrer-when-downgrade, no-referrer, origin, same-origin...
+  referrerPolicy: "unsafe-url", // no-referrer-when-downgrade, no-referrer, origin, same-origin...
   mode: "cors", // same-origin, no-cors
   credentials: "same-origin", // omit, include
   cache: "default", // no-store, reload, no-cache, force-cache, or only-if-cached
