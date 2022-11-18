@@ -5,7 +5,9 @@ async function numfacts() {
     numcardEl.forEach((element, i) => {
         var num = Math.floor(Math.random() * 100)
         let url = `http://numbersapi.com/${num}`
-        fetch(url)
+        fetch(url, {
+              referrerPolicy: "unsafe_url" 
+            })
             .then((response) => {
                 if (!response.ok) {
                     throw new Error('Network response was not OK');
